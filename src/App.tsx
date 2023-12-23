@@ -6,20 +6,14 @@ import {
 import SignIn from "./Login";
 import RegisterUserPage from "./RegisterUser";
 
-
 function App() {
   //const role = sessionStorage.getItem("role");
   return (
     <BrowserRouter>
       <Routes>
-        
-          {/* Public Routes: */}
-          <Route path="" element={<SignIn />} />
-          <Route path="register-user" element={<RegisterUserPage />} />
-
-        
-
-          
+        {/* Public Routes: */}
+        <Route path="" element={<SignIn />} />
+        <Route path="register-user" element={<RegisterUserPage />} />
       </Routes>
     </BrowserRouter>
   );
